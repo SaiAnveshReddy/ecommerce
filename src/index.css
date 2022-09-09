@@ -1,13 +1,125 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Cambria";
+  background: #000000;
+  color: #222;
 }
+.image {
+  margin-top: 1rem;
+}
+
+.booklist {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 4rem;
+  margin-left: 1.2rem;
+  margin-top: 1rem;
+  display: grid;
+  gap: 2rem;
+  align-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(4, 0.5fr);
+  }
+}
+
+.book {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem 1.4rem;
+  position: relative;
+  left: 5px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.book h3 {
+  margin-top: 0.5rem;
+}
+.book h5 {
+  margin-top: 0.5rem;
+}
+
+.productName {
+  font-size: 18px;
+}
+.Price {
+  font-size: 16px;
+}
+
+.text {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.button {
+ 
+  background-color: none;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+}
+
+.icon{
+  display: flex;
+  float: right;
+  margin-right: 1.5rem;
+  height: 50px;
+  width: 50px;
+  color: white;
+}
+
+.icon:hover {
+  color: rgb(7, 238, 15);
+  transform: translateY(3px);
+}
+
+.title{
+  margin-top: 1.5rem;
+  background-color: #ffffff;
+}
+
+.addToCart {
+  border-radius: 8px;
+  display: flex;
+  float: right;
+  background-color: #0366fc; 
+  border: none;
+  color: white;
+  width: auto;
+  margin-top: 0.5rem;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.addToCart:hover {
+  background-color: rgb(238, 34, 7);
+}
+.addToCart:active{
+  transform: scale(.8);
+}
+
